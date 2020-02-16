@@ -1,5 +1,8 @@
 <template>
   <div class="home">
+    <div class="title">
+      <h1>ホーム</h1>
+    </div>
     <ul>
       <li class="banner">
         <a href="#"><div class="dummy-banner">banner 1</div></a>
@@ -27,15 +30,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 .home {
   margin: 16px 16px 0;
-  padding-bottom: 64px;
+  padding-bottom: 80px;
 }
 .dummy-banner {
   display: flex;

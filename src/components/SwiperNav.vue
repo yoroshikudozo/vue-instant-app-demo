@@ -18,7 +18,7 @@
           :class="{ 'is-active': activeIndex === 1 }"
           @click.prevent="toSlide(1)"
         >
-          faspa
+          fp
         </button>
       </li>
       <li class="swiper-pagination-bullet">
@@ -28,7 +28,7 @@
           :class="{ 'is-active': activeIndex === 2 }"
           @click.prevent="toSlide(2)"
         >
-          takeout
+          to
         </button>
       </li>
       <li class="swiper-pagination-bullet">

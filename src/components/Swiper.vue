@@ -1,9 +1,9 @@
 <template>
   <swiper :options="swiperOption" ref="swiper" @slideChange="slideChange">
     <swiper-slide data-history="home"><home-content /></swiper-slide>
-    <swiper-slide data-history="faspa">I'm Slide 2</swiper-slide>
-    <swiper-slide data-history="takeout">I'm Slide 3</swiper-slide>
-    <swiper-slide data-history="list">I'm Slide 4</swiper-slide>
+    <swiper-slide data-history="fp"><fp-content /></swiper-slide>
+    <swiper-slide data-history="to"><to-content /></swiper-slide>
+    <swiper-slide data-history="list"><list-content /></swiper-slide>
     <swiper-nav
       :activeIndex="activeIndex"
       @toSlide="toSlide"
@@ -15,6 +15,9 @@
 <script>
 import { swiper, swiperSlide } from "vue-awesome-swiper";
 import HomeContent from "@/components/HomeContent";
+import FpContent from "@/components/FpContent";
+import ToContent from "@/components/ToContent";
+import ListContent from "@/components/ListContent";
 import SwiperNav from "@/components/SwiperNav";
 
 export default {
@@ -22,8 +25,11 @@ export default {
   components: {
     swiper,
     swiperSlide,
+    SwiperNav,
     HomeContent,
-    SwiperNav
+    FpContent,
+    ToContent,
+    ListContent
   },
   data() {
     return {
