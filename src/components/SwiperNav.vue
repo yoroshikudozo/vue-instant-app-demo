@@ -63,7 +63,9 @@ export default {
 .swiper-pagination {
   position: absolute;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
 }
 .swiper-pagination-list {
   display: flex;
